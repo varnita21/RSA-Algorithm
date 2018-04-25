@@ -30,16 +30,8 @@ void main() {
 	}
 	printf("These are the following cipher num\n");
 	for(i=0;i<20;i++) {
-	    int m = c[i];
-	    long r=1;
-	    while (m> 0)
-    {
-        r *= num;
-        --m;
-    }
-    
-    cipher= r%n;
-	printf("The cipher text when e = %d:\t%d\n",c[i],cipher);
+		cipher= (num^c[i])%n;
+		printf("The cipher text when e = %d:\t%d\n",c[i],cipher);
 	}
 
 	getch();
