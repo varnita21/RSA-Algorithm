@@ -1,5 +1,5 @@
 # RSA-Algorithm
-RSA algorithm in cryptography and network security for input of a number
+Encryption of a number using RSA algorithm in cryptography and network security in C.
 #include<stdio.h>
 #include<conio.h>
 #include<string.h>
